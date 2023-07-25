@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WAR Card Game</title>
+  <style>
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="node_modules/mocha/mocha.css" /> <!-- NOTE here is where I link my Mocha.css -->
+</head>
+<body>
+  <h1>WAR Card Game</h1>
+
+  <div id="mocha"><p><a href=".">Index</a></p></div>
+  <div id="messages"></div>
+  <div id="fixtures"></div>  
+  <script src="node_modules/chai/chai.js"></script> <!-- NOTE here is where I link my Chai.js -->
+  <script src="node_modules/mocha/mocha.js"></script> <!-- NOTE here is where I link my Mocha.js -->
+  <script src="wargame.js"> </script> <!-- NOTE here is where I link my index.js -->
+  <script>mocha.setup('bdd')</script> <!-- NOTE here is where I set up my test -->
+  <script src="test.js"> </script> <!-- NOTE here is where I link my test file -->
+  <script>mocha.run();</script> <!-- NOTE here is where I run my test -->
+</body>
+</html>
